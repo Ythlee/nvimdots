@@ -13,6 +13,8 @@ local core_map = {
 	["n|n"] = map_cmd("nzzzv"):with_noremap():with_desc("edit: Next search result"),
 	["n|N"] = map_cmd("Nzzzv"):with_noremap():with_desc("edit: Prev search result"),
 	["n|J"] = map_cmd("mzJ`z"):with_noremap():with_desc("edit: Join next line"),
+	["n|H"] = map_cmd("0"):with_noremap():with_desc("edit: Go to the line front"),
+	["n|L"] = map_cmd("$"):with_noremap():with_desc("edit: Go to the line tail"),
 	["n|<Esc>"] = map_callback(function()
 			_flash_esc_or_noh()
 		end)
